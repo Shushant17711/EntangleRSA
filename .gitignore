@@ -4,3 +4,6 @@ __pycache__/
 runs/
 .pytest_cache/
 *.egg-info/
+runs_archive/
+runs_pilot.log
+results_pilot/

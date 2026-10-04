@@ -47,7 +47,7 @@ main table, gates) from scratch, all tests green, and README/LIMITATIONS/paper r
   - _Requirements: 4.5, 5.1, 5.2_
 
 - [ ] 6. Implement PPO training end-to-end
-- [ ] 6.1 Implement the PPO trainer with grad-variance logging
+- [x] 6.1 Implement the PPO trainer with grad-variance logging
   - `rl/ppo.py`: rollout, GAE, clipped loss, param groups (quantum vs classical LR), per-minibatch grad collection → grad_var
   - `train.py` CLI writes config.json, metrics.csv, model.pt, eval.json, `done`
   - test: 2-update smoke run for MLP and quantum on CartPole produces all artifacts
@@ -62,17 +62,17 @@ main table, gates) from scratch, all tests green, and README/LIMITATIONS/paper r
   - tests: deterministic probes for fixed seed; extract shape (n_probes, d) for quantum and MLP
   - _Requirements: 4.2, 4.3, 4.6_
 
-- [ ] 8. Implement the statistics layer
+- [x] 8. Implement the statistics layer
   - `rsa/stats.py`: ceilings, cross-RSA/CKA matrices, RSA_norm, hierarchical bootstrap, 2-segment piecewise fit, disagreement rule
   - tests: piecewise fit recovers a planted breakpoint; bootstrap CI covers truth on synthetic data; ceiling = 1 for identical seeds
   - _Requirements: 4.4, 7.1, 7.2, 7.3, 7.5_
 
-- [ ] 9. Implement the H3 partitioned analysis
+- [x] 9. Implement the H3 partitioned analysis
   - `rsa/partitioned_analysis.py`: pair features, coupled share, magnitude-matched partitions, discrepancy, permutation test
   - test: planted-coupling synthetic reps give significant T; null reps don't
   - _Requirements: 6.3, 7.4_
 
-- [ ] 10. Implement init gradient variance
+- [x] 10. Implement init gradient variance
   - `analysis/gradvar_init.py`: 200 inits per (task, k, topology), mean param variance of ∂⟨Z_0⟩/∂θ, CSV output
   - _Requirements: 6.6, 7.3_
 

@@ -16,7 +16,7 @@ N_LAYERS = 4
 
 @dataclass
 class PPOConfig:
-    total_steps: int = 300_000
+    total_steps: int = 500_000
     n_envs: int = 8
     n_steps: int = 128
     gamma: float = 0.99
@@ -27,9 +27,9 @@ class PPOConfig:
     ent_coef: float = 0.01
     vf_coef: float = 0.5
     max_grad_norm: float = 0.5
-    lr_actor: float = 2.5e-3  # classical actor params (MLP layers, policy head)
-    lr_quantum: float = 1e-2  # circuit angles and input scalings
-    lr_critic: float = 1e-3
+    lr_actor: float = 5e-4  # classical actor params (MLP layers, policy head)
+    lr_quantum: float = 5e-3  # circuit angles and input scalings
+    lr_critic: float = 5e-4
     anneal_lr: bool = True
 
 

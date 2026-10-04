@@ -132,3 +132,4 @@ chairman's 50/50 MLP+uniform mix.
   which are therefore reported for every condition. CKA discriminated less (0.67 vs 0.53) on the same nets.
 - 2026-10-04, ordering: H3 partitioned-analysis core (tasks 9) was implemented together with E1 (task 5) because
   the planted-coupling check needs it.
+- 2026-10-04, pilot 1 (300k steps, lr actor 2.5e-3 / quantum 1e-2 / critic 1e-3): G2 would fail (eval >= 475 in only 1/3 seeds for q-sep-k0 and q-chain-k4). Every family, MLP included, reached ~500 and then collapsed, so the problem is optimisation instability, not capacity. The one permitted shared adjustment (tasks 6.2): lr actor 5e-4, quantum 5e-3, critic 5e-4, CartPole steps 500k. Frozen after pilot 2 whatever the outcome. Pilot-1 data archived in runs_archive/. Pilot-1 ceilings: RSA q-sep 0.31, q-chain-k4 0.57, MLP 0.39 (G3 provisionally passes).
