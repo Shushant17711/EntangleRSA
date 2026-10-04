@@ -1,0 +1,4 @@
+# Facts for the chairman (verified by the orchestrator, not opinions)
+- 2603.10289 used ONLY linear CKA on Pong. No one has yet computed RDM-Spearman RSA on these systems — the "CKA vs RSA disagree" premise several advisors used is HYPOTHETICAL until we measure it. Their intra-quantum similarity across seeds was low, so any quantum-vs-classical similarity must be read against a quantum seed-to-seed ceiling.
+- Benchmark on this laptop (CPU, 4 qubits, 3 layers, batch 256, fwd+bwd): naive custom torch statevector sim 18.8 ms/call; PennyLane default.qubit+torch 18.7 ms/call; outputs agree to 5.5e-7. So D2 is not a speed question at this size; custom sim could be optimized (precomputed gates, GPU) but PennyLane is already validated.
+- Env ready: Python 3.12 venv, torch 2.14 (CUDA OK), PennyLane 0.45, gymnasium 1.3.
