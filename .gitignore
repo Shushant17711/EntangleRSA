@@ -7,3 +7,5 @@ runs/
 runs_archive/
 runs_pilot.log
 results_pilot/
+runs_e2.log
+pipeline.log

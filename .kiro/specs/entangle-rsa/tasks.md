@@ -46,18 +46,18 @@ main table, gates) from scratch, all tests green, and README/LIMITATIONS/paper r
   - `tests/test_validation_e1.py` asserting thresholds from design §9 — this is gate G1
   - _Requirements: 4.5, 5.1, 5.2_
 
-- [ ] 6. Implement PPO training end-to-end
+- [x] 6. Implement PPO training end-to-end
 - [x] 6.1 Implement the PPO trainer with grad-variance logging
   - `rl/ppo.py`: rollout, GAE, clipped loss, param groups (quantum vs classical LR), per-minibatch grad collection → grad_var
   - `train.py` CLI writes config.json, metrics.csv, model.pt, eval.json, `done`
   - test: 2-update smoke run for MLP and quantum on CartPole produces all artifacts
   - _Requirements: 3.1, 3.3, 3.4_
-- [ ] 6.2 Run the CartPole pilot and freeze hyperparameters
+- [x] 6.2 Run the CartPole pilot and freeze hyperparameters
   - pilot: q-sep-k0, q-chain-k4, mlp × 3 seeds; adjust shared LR/steps once if G2 fails, then freeze in config defaults
   - record pilot results in `results/pilot.md`
   - _Requirements: 3.1, 8.3_
 
-- [ ] 7. Build probe collection and representation extraction
+- [x] 7. Build probe collection and representation extraction
   - `rsa/probes.py` (pooled trajectory probes with equal per-run share; uniform probes); `rsa/extract.py` (load run → rep matrix for given probes; random-init reps)
   - tests: deterministic probes for fixed seed; extract shape (n_probes, d) for quantum and MLP
   - _Requirements: 4.2, 4.3, 4.6_

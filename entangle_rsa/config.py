@@ -29,7 +29,7 @@ class PPOConfig:
     max_grad_norm: float = 0.5
     lr_actor: float = 5e-4  # classical actor params (MLP layers, policy head)
     lr_quantum: float = 5e-3  # circuit angles and input scalings
-    lr_critic: float = 5e-4
+    lr_critic: float = 2.5e-3
     anneal_lr: bool = True
 
 
