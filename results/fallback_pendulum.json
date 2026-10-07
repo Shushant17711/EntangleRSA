@@ -1,0 +1,11 @@
+{
+  "q-sep-k0-z": {
+    "n_seeds": 5,
+    "n_reached": 0
+  },
+  "q-chain-k4-z": {
+    "n_seeds": 5,
+    "n_reached": 5
+  },
+  "triggered": true
+}

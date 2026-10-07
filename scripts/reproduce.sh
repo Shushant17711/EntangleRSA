@@ -3,6 +3,9 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 PY=.venv/bin/python
+# One BLAS/OpenMP thread per process: the pools already use every core; 16 workers x 20 BLAS
+# threads oversubscribed the CPU ~100x during the bootstrap.
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1
 WORKERS=${WORKERS:-16}
 
 echo "== G1: measurement validation (E1) and simulator oracle =="

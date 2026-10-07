@@ -76,21 +76,21 @@ main table, gates) from scratch, all tests green, and README/LIMITATIONS/paper r
   - `analysis/gradvar_init.py`: 200 inits per (task, k, topology), mean param variance of ∂⟨Z_0⟩/∂θ, CSV output
   - _Requirements: 6.6, 7.3_
 
-- [ ] 11. Run the sweeps
-- [ ] 11.1 Add the sweep runner and run E2 CartPole
+- [x] 11. Run the sweeps
+- [x] 11.1 Add the sweep runner and run E2 CartPole
   - `sweep.py`: grid → process pool (1 thread/worker), skip `done` runs, log failures; E2 grid incl. extra ceiling seeds
   - _Requirements: 3.5, 6.1_
-- [ ] 11.2 Run E3 Pendulum with pre-registered fallback check
+- [x] 11.2 Run E3 Pendulum with pre-registered fallback check
   - check fallback criterion programmatically; if triggered, run Acrobot sweep and restrict Pendulum to H3
   - _Requirements: 6.2_
-- [ ] 11.3 Run the observable ablation (zzz) on CartPole
+- [x] 11.3 Run the observable ablation (zzz) on CartPole
   - _Requirements: 6.5_
 
-- [ ] 12. Build the analysis and figures
+- [x] 12. Build the analysis and figures
   - `analysis/aggregate.py` + `analyze.py`: probes, reps, RSA/CKA + diagnostics, bootstrap, H1/H2/H3 verdicts, E5 ablation, gates → `results/rsa_return_gradvar_curve.png`, `results/partitioned_dissimilarity.png`, `results/main_table.md`, `results/gates.md`
   - _Requirements: 4.5, 6.4, 7.2, 7.3, 7.4, 7.5, 8.1, 8.3_
 
-- [ ] 13. Write reproduce script, README, LIMITATIONS, paper
+- [x] 13. Write reproduce script, README, LIMITATIONS, paper
   - `scripts/reproduce.sh` (G1 tests → sweeps → analyze); README with matching criteria and results; LIMITATIONS.md; `paper/main.tex` filled from results
   - _Requirements: 2.3, 5.3, 8.2_
 

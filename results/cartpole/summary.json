@@ -1,0 +1,83 @@
+{
+  "task": "cartpole",
+  "n_runs": 70,
+  "n_boot": 2000,
+  "probe_kind": "trajectory (pooled, equal share per run)",
+  "verdicts": {
+    "chain": {
+      "H1": "inconclusive",
+      "H1_rsa_trend_ci": [
+        -0.6,
+        0.8999999999999998
+      ],
+      "H2_breakpoint_overlap": true,
+      "H2_gradvar_falls_after_breakpoint": true,
+      "H2": "not supported",
+      "disagreement": "consistent",
+      "cka_trend_ci": [
+        0.09999999999999999,
+        0.9999999999999999
+      ]
+    },
+    "all": {
+      "H1": "inconclusive",
+      "H1_rsa_trend_ci": [
+        0.0,
+        0.8999999999999998
+      ],
+      "H2_breakpoint_overlap": true,
+      "H2_gradvar_falls_after_breakpoint": true,
+      "H2": "not supported",
+      "disagreement": "consistent",
+      "cka_trend_ci": [
+        0.7999999999999999,
+        0.8999999999999998
+      ]
+    }
+  },
+  "h3": {
+    "chain": {
+      "mean_T": 0.005917608589259532,
+      "n_seeds_p<0.05": 3,
+      "n_seeds": 10
+    },
+    "all": {
+      "mean_T": 0.008877796123631206,
+      "n_seeds_p<0.05": 2,
+      "n_seeds": 5
+    }
+  },
+  "ceilings": {
+    "mlp-pm": {
+      "rsa": 0.6258311256904676
+    },
+    "q-all-k1": {
+      "rsa": 0.5258376688673838
+    },
+    "q-all-k2": {
+      "rsa": 0.3050066795393908
+    },
+    "q-all-k3": {
+      "rsa": 0.19067122381013105
+    },
+    "q-all-k4": {
+      "rsa": 0.41199028891622513
+    },
+    "q-chain-k1": {
+      "rsa": 0.5971822899544212
+    },
+    "q-chain-k2": {
+      "rsa": 0.5824001684530231
+    },
+    "q-chain-k3": {
+      "rsa": 0.5735000073394353
+    },
+    "q-chain-k4": {
+      "rsa": 0.41296785066328096
+    },
+    "q-sep-k0": {
+      "rsa": 0.552002288078369
+    }
+  },
+  "ref_ceiling_rsa": 0.48910142856657735
+}

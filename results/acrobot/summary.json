@@ -1,0 +1,83 @@
+{
+  "task": "acrobot",
+  "n_runs": 70,
+  "n_boot": 2000,
+  "probe_kind": "trajectory (pooled, equal share per run)",
+  "verdicts": {
+    "chain": {
+      "H1": "supported",
+      "H1_rsa_trend_ci": [
+        0.09999999999999999,
+        0.9999999999999999
+      ],
+      "H2_breakpoint_overlap": true,
+      "H2_gradvar_falls_after_breakpoint": true,
+      "H2": "supported",
+      "disagreement": "consistent",
+      "cka_trend_ci": [
+        0.3,
+        0.9999999999999999
+      ]
+    },
+    "all": {
+      "H1": "inconclusive",
+      "H1_rsa_trend_ci": [
+        -0.3,
+        0.9999999999999999
+      ],
+      "H2_breakpoint_overlap": true,
+      "H2_gradvar_falls_after_breakpoint": true,
+      "H2": "not supported",
+      "disagreement": "consistent",
+      "cka_trend_ci": [
+        -0.09999999999999999,
+        0.9999999999999999
+      ]
+    }
+  },
+  "h3": {
+    "chain": {
+      "mean_T": 0.009030685919531815,
+      "n_seeds_p<0.05": 8,
+      "n_seeds": 10
+    },
+    "all": {
+      "mean_T": 0.0017637874816128051,
+      "n_seeds_p<0.05": 3,
+      "n_seeds": 5
+    }
+  },
+  "ceilings": {
+    "mlp-pm": {
+      "rsa": 0.7069670324105679
+    },
+    "q-all-k1": {
+      "rsa": 0.6555573533338159
+    },
+    "q-all-k2": {
+      "rsa": 0.6694841398126449
+    },
+    "q-all-k3": {
+      "rsa": 0.6641459962290581
+    },
+    "q-all-k4": {
+      "rsa": 0.2573385277174764
+    },
+    "q-chain-k1": {
+      "rsa": 0.7016481874955957
+    },
+    "q-chain-k2": {
+      "rsa": 0.7157032732768941
+    },
+    "q-chain-k3": {
+      "rsa": 0.7141566586986517
+    },
+    "q-chain-k4": {
+      "rsa": 0.7604748037385245
+    },
+    "q-sep-k0": {
+      "rsa": 0.666370120466737
+    }
+  },
+  "ref_ceiling_rsa": 0.8397129118910807
+}
