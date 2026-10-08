@@ -142,3 +142,7 @@ results/                 figures, tables, gates (generated)
 ```
 
 See `LIMITATIONS.md` for what this does and does not show.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
